@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bienvenido a nuestro sitio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <style>
+        body {
+            background: #b4f905f8;
+
+        }
+
+        .fondoIzquierdo {
+            background-image: url(../assets/dev.png);
+            background-position: center center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Nuestra clase principal que contendra todos los elementos. -->
+    <!-- w se utiliza para asignarle un ancho según el porcentaje que se le asigne. -->
+    <!-- mt es el margin-top que se desea asignar, mb es el margin-bottom que se desea asignar. -->
+    <!-- bg-sucess se utiliza para añadir un colo de background. -->
+    <!-- rounded se utiliza para definir el border-radious. -->
+    <!-- shadow se utiliza para agregar sombras. -->
+    <div class="container w-75 mt-5 mb-5 bg-success rounded shadow">
+        <!-- Es para crear una fila dentro de nuestro grid. -->
+        <!-- alig-items-* se utiliza para alinear los elementos dentro del div dependiendo del parametro deseado. -->
+        <div class="row align-items-stretch">
+            <!-- Nos ayuda a crear una columna dentro del ROW. -->
+            <!-- Se asigna el estilo incrustado. d sirve para mostrar el contenido según el tamaño de la pantalla. -->
+            <!-- col-*-5 le indica al explorador cuants columnas va a tomar según el tamaño de la pantalla -->
+            <div class="col fondoIzquierdo d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+
+            </div>
+            <!-- Nos ayuda a crear una columna dentro del ROW -->
+            <!-- p se utiliza para el padding. -->
+            <div class="col bg-white p-5 rounded">
+                <!-- Centrar el texto o elementos en el centro -->
+                <div class="text-end">
+                    <img src="../assets/logo.svg" width="48">
+                </div>
+                <!-- text-center se utiliza para centrar el texto, py-* se utiliza para colocar un padding vertical al elemento -->
+                <!-- fw-bold se utiliza para agregar formato negrita al texto -->
+                <h2 class="fw-bold text-center py-2">Bienvenido!</h2>
+
+                <form action="#">
+                    <!-- mb-* es el margin-bottom que se desea asignar. -->
+                    <div class="mb-2">
+                        <label for="Correo" class="form-label">Ingrese su correo electrónico</label>
+                        <input type="email" class="form-control" name="Correo">
+                    </div>
+                    <!-- mb-* es el margin-bottom que se desea asignar. -->
+                    <div class="mb-2">
+                        <label for="Pass" class="form-label">Ingrese su contraseña</label>
+                        <input type="password" class="form-control" name="Pass">
+                    </div>
+                    <!-- mb-* es el margin-bottom que se desea asignar. -->
+                    <div class="mb-2">
+                        <input type="checkbox" name="Mantener" class="form-check-input">
+                        <label for="Mantener" class="form-check-label">Mantener la sesión abierta</label>
+                    </div>
+                    <!--Sirve para que el elemento ocupe el ancho del contenedor-->
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión!</button>
+                    </div>
+                    <!-- Agregar un margen vertical al elemento -->
+                    <div class="my-3">
+                        <span>¿No tienes cuenta? <a href="#">Registrate!</a></span>
+                        <br>
+                        <span><a href="#">Recuperar contraseña</a></span>
+                    </div>
+
+                </form>
+
+                <!-- w se utiliza para asignarle un ancho según el porcentaje que se le asigne. -->
+                <!-- Agregar un margen vertical al elemento -->
+                <div class="container w-100 my-5">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            Iniciar Sesion
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <!-- btn para agregar la clase botón y btn-*-**, * para agregar el tipo de botón y ** para agregar el color -->
+                            <!-- w se utiliza para asignarle un ancho según el porcentaje que se le asigne y my-* para agregar un margen vertical -->
+                            <button class="btn btn-outline-primary w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2">
+                                        <img src="../assets/facebook.png" width="32">
+                                    </div>
+
+                                    <div class="col-9">Facebook</div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <!-- btn para agregar la clase botón y btn-*-**, * para agregar el tipo de botón y ** para agregar el color -->
+                            <!-- w se utiliza para asignarle un ancho según el porcentaje que se le asigne y my-* para agregar un margen vertical -->
+                            <button class="btn btn-outline-danger w-100 my-1">
+                                <div class="row alig-items-center">
+                                    <div class="col-2">
+                                        <img src="../assets/google.png" width="32">
+                                    </div>
+
+                                    <div class="col-9">Google</div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
