@@ -93,3 +93,9 @@ footer .left ul {
     text-decoration: none;
     color: #fee504;
 }
+
+
+.container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
