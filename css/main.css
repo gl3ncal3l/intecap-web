@@ -21,6 +21,7 @@ header {
     height: 130px;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    
 }
 header .header-icons-container {
     width: 100%;
@@ -41,17 +42,21 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     
+    
 }
 .content {
     display: grid;
     grid-template-columns: 2fr  3fr;
     grid-auto-rows: 400px;
+    margin: 50px 0;
+    gap: 15px;
 
 }
 .content-image{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    margin-top: 45px;
 
 }
 .info {
@@ -67,12 +72,46 @@ main {
     padding: 12px 24px;
 
 }
+.blogs-posts-container {
+    padding:  0 50px 40px;
+}
+.blogs-posts-container h3 {
+    border-bottom: 1px solid #cdd2da;
+    padding: 20px;
+    text-align: center;
+
+}
+.blogs-button {
+    border: 2px solid #000;
+    padding: 10px 15px;
+    font-size: 12px;
+    background-color: #47cfac;
+}
+.blogs-posts-container .post-container {
+    display: inline-block;
+    padding-left: 10px;
+    max-width: 30%;
+    margin-bottom: 50px;
+}
+.blogs-posts-container .post-container p {
+    margin-bottom: 35px;
+  
+    
+   
+}
+.blogs-posts-container .post-container img {
+    width: 100%;
+    object-fit: cover;
+    
+    
+}
 
 footer {
     display: flex;
     width: 100%;
-    height: 150px;
+    height: 100px;
     background-color: #141414;
+    margin-top: 35px;
 }
 footer section {
     display: flex;
@@ -81,7 +120,7 @@ footer section {
     align-items: center;
 }
 footer .left ul {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.8rem;
     list-style: none;
